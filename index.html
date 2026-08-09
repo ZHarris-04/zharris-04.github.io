@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cybersecurity portfolio for Zachary Harris, a cybersecurity student and aspiring penetration tester."
+    >
+
     <title>Zachary Harris | Cybersecurity Portfolio</title>
 
     <style>
@@ -148,6 +154,10 @@
             color: #8b949e;
         }
 
+        .card strong {
+            color: #c9d1d9;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -156,7 +166,7 @@
         }
 
         .skill {
-            background: #16221d;
+            background-color: #16221d;
             border: 1px solid #294b39;
             color: #7ee2a8;
             padding: 8px 14px;
@@ -171,6 +181,15 @@
             margin-top: 40px;
         }
 
+        footer a {
+            color: #58d68d;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 700px) {
             nav .links {
                 display: none;
@@ -182,6 +201,10 @@
 
             .hero h2 {
                 font-size: 25px;
+            }
+
+            section {
+                padding: 60px 8%;
             }
         }
     </style>
@@ -197,7 +220,14 @@
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="resume.pdf">Resume</a>
+
+            <a
+                href="resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Resume
+            </a>
         </div>
     </nav>
 
@@ -211,7 +241,7 @@
             <h2>Cybersecurity Student & Aspiring Penetration Tester</h2>
 
             <p>
-                I am a Cybersecurity student at Northern Kentucky University
+                I am a cybersecurity student at Northern Kentucky University
                 interested in penetration testing, network security, digital
                 forensics, and preventative security. I enjoy learning how
                 systems work, identifying where they can fail, and finding
@@ -232,10 +262,17 @@
                 have gained hands-on experience in cybersecurity, networking,
                 digital forensics, operating systems, and technical support.
                 My primary interests are penetration testing and preventative
-                security. After graduation, I plan to gain professional
-                cybersecurity experience before eventually building a
-                cybersecurity business focused on penetration testing and
-                helping organizations better protect their systems.
+                security.
+            </p>
+
+            <br>
+
+            <p>
+                After graduation, I plan to spend several years gaining
+                professional experience in the cybersecurity field. I would
+                eventually like to pursue an MBA and establish a cybersecurity
+                business focused on penetration testing and helping
+                organizations better protect their systems and information.
             </p>
         </section>
 
@@ -246,21 +283,33 @@
             <div class="cards">
 
                 <div class="card">
-                    <h3>2026 IT Internship</h3>
+                    <h3>Franchino Mold & Engineering</h3>
+
                     <p>
+                        <strong>IT Intern | May–July 2026</strong>
+                        <br><br>
+
                         Worked with enterprise and industrial technology,
-                        including MFA implementation, workstation deployments,
-                        network equipment, system firmware, and documentation
-                        of CNC machine communication and file-transfer systems.
+                        including MFA implementation, Windows 11 deployments,
+                        network equipment, system firmware, workstation
+                        replacements, and documentation of CNC machine
+                        communication and file-transfer systems.
                     </p>
                 </div>
 
                 <div class="card">
                     <h3>Gardner Business Media</h3>
+
                     <p>
+                        <strong>
+                            IT Support Assistant | Summers 2024 & 2025
+                        </strong>
+
+                        <br><br>
+
                         Supported Windows and macOS systems, workstation
                         imaging and deployment, software installation,
-                        troubleshooting, backups, and endpoint support.
+                        troubleshooting, data backups, and endpoint support.
                     </p>
                 </div>
 
@@ -269,43 +318,49 @@
 
 
         <section id="projects">
-            <h2>Cybersecurity Projects</h2>
+            <h2>Academic Cybersecurity Projects</h2>
 
             <div class="cards">
 
                 <div class="card">
                     <h3>Offensive Security Labs</h3>
+
                     <p>
-                        Completed controlled lab exercises involving wireless
-                        security, privilege escalation, MITM simulations,
-                        phishing techniques, and network attack concepts.
+                        Completed controlled and authorized lab exercises
+                        involving wireless security assessment, privilege
+                        escalation, MITM simulations, phishing techniques,
+                        DDoS concepts, and other network attack concepts.
                     </p>
                 </div>
 
                 <div class="card">
                     <h3>Digital Forensics</h3>
+
                     <p>
-                        Investigated computer and mobile data using forensic
-                        tools to locate deleted, hidden, and steganographic
-                        information.
+                        Investigated computer and mobile-device data using
+                        forensic tools to locate deleted, hidden, and
+                        steganographic information.
                     </p>
                 </div>
 
                 <div class="card">
                     <h3>Network Security Analysis</h3>
+
                     <p>
                         Used Wireshark and Snort to analyze network traffic,
                         examine protocols, identify suspicious activity, and
-                        explore intrusion detection.
+                        explore intrusion-detection techniques.
                     </p>
                 </div>
 
                 <div class="card">
-                    <h3>Industrial Systems Documentation</h3>
+                    <h3>Internship: Industrial Systems Documentation</h3>
+
                     <p>
                         Investigated and documented communication between
                         manufacturing equipment, Windows-based controllers,
-                        network shares, and programming workstations.
+                        network shares, and programming workstations while
+                        protecting confidential company information.
                     </p>
                 </div>
 
@@ -319,18 +374,22 @@
             <div class="skills">
                 <span class="skill">Wireshark</span>
                 <span class="skill">Kali Linux</span>
-                <span class="skill">Windows</span>
+                <span class="skill">Windows 10/11</span>
                 <span class="skill">Linux</span>
                 <span class="skill">Snort IDS</span>
                 <span class="skill">YARA</span>
                 <span class="skill">Autopsy</span>
-                <span class="skill">EnCase</span>
+                <span class="skill">EnCase E3</span>
                 <span class="skill">VMware</span>
                 <span class="skill">Python</span>
                 <span class="skill">Java</span>
                 <span class="skill">Network Security</span>
                 <span class="skill">Digital Forensics</span>
                 <span class="skill">Penetration Testing</span>
+                <span class="skill">MFA</span>
+                <span class="skill">SMB & File Sharing</span>
+                <span class="skill">System Deployment</span>
+                <span class="skill">Technical Documentation</span>
             </div>
         </section>
 
@@ -338,7 +397,27 @@
 
 
     <footer>
-        <p>© 2026 Zachary Harris | Cybersecurity Portfolio</p>
+        <p>
+            © 2026 Zachary Harris |
+
+            <a
+                href="https://www.linkedin.com/in/zacharyjamesharris/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            |
+
+            <a
+                href="https://github.com/ZHarris-04"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+        </p>
     </footer>
 
 </body>
