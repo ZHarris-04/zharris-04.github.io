@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Harris | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0b1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(11, 17, 23, 0.95);
+            border-bottom: 1px solid #26313c;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: #58d68d;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #c9d1d9;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #58d68d;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero .intro {
+            color: #58d68d;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            color: #8b949e;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #b1bac4;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            width: fit-content;
+            margin-top: 30px;
+            padding: 12px 22px;
+            color: #58d68d;
+            border: 1px solid #58d68d;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background-color: #58d68d;
+            color: #0b1117;
+        }
+
+        section {
+            padding: 80px 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #58d68d;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            color: #b1bac4;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #111820;
+            border: 1px solid #26313c;
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #58d68d;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: #8b949e;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .skill {
+            background: #16221d;
+            border: 1px solid #294b39;
+            color: #7ee2a8;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #6e7681;
+            border-top: 1px solid #26313c;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            nav .links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">ZH.</div>
+
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="resume.pdf">Resume</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="hero">
+            <p class="intro">Hello, my name is</p>
+
+            <h1>Zachary Harris.</h1>
+
+            <h2>Cybersecurity Student & Aspiring Penetration Tester</h2>
+
+            <p>
+                I am a Cybersecurity student at Northern Kentucky University
+                interested in penetration testing, network security, digital
+                forensics, and preventative security. I enjoy learning how
+                systems work, identifying where they can fail, and finding
+                ways to make them more secure.
+            </p>
+
+            <a class="button" href="#projects">View My Work</a>
+        </div>
+
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am currently pursuing a Bachelor of Science in Cybersecurity
+                at Northern Kentucky University with an expected graduation in
+                Fall 2027. Through coursework and multiple IT internships, I
+                have gained hands-on experience in cybersecurity, networking,
+                digital forensics, operating systems, and technical support.
+                My primary interests are penetration testing and preventative
+                security. After graduation, I plan to gain professional
+                cybersecurity experience before eventually building a
+                cybersecurity business focused on penetration testing and
+                helping organizations better protect their systems.
+            </p>
+        </section>
+
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>2026 IT Internship</h3>
+                    <p>
+                        Worked with enterprise and industrial technology,
+                        including MFA implementation, workstation deployments,
+                        network equipment, system firmware, and documentation
+                        of CNC machine communication and file-transfer systems.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Gardner Business Media</h3>
+                    <p>
+                        Supported Windows and macOS systems, workstation
+                        imaging and deployment, software installation,
+                        troubleshooting, backups, and endpoint support.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2>Cybersecurity Projects</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Offensive Security Labs</h3>
+                    <p>
+                        Completed controlled lab exercises involving wireless
+                        security, privilege escalation, MITM simulations,
+                        phishing techniques, and network attack concepts.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Digital Forensics</h3>
+                    <p>
+                        Investigated computer and mobile data using forensic
+                        tools to locate deleted, hidden, and steganographic
+                        information.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Network Security Analysis</h3>
+                    <p>
+                        Used Wireshark and Snort to analyze network traffic,
+                        examine protocols, identify suspicious activity, and
+                        explore intrusion detection.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Industrial Systems Documentation</h3>
+                    <p>
+                        Investigated and documented communication between
+                        manufacturing equipment, Windows-based controllers,
+                        network shares, and programming workstations.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <span class="skill">Wireshark</span>
+                <span class="skill">Kali Linux</span>
+                <span class="skill">Windows</span>
+                <span class="skill">Linux</span>
+                <span class="skill">Snort IDS</span>
+                <span class="skill">YARA</span>
+                <span class="skill">Autopsy</span>
+                <span class="skill">EnCase</span>
+                <span class="skill">VMware</span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">Network Security</span>
+                <span class="skill">Digital Forensics</span>
+                <span class="skill">Penetration Testing</span>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Zachary Harris | Cybersecurity Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
